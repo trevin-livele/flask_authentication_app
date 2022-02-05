@@ -35,3 +35,10 @@ def logout():
 def login():
 
     pass
+
+
+
+@app.route("/login",methods=['GET','POST'])
+def login():
+
+    pass
