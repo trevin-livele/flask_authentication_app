@@ -5,7 +5,14 @@
 {% block content %}
 
 <div class="jumbotron">
-    
+
+    {% if current_user.is_authenticated %}
+    <p>hi {{current_user.username}}</p>
+    {% else %}
+    <p>please login or register</p>
+
+    {% endif %}
+
 </div>
 
 
