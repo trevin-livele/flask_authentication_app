@@ -2,7 +2,9 @@
 {% block content %}
 <form method="POST">
 {{form.hidden_tag()}}
-{{form.email.label}}{{form.email}}<br>
+
+{{form.email.label(class="form-control-label")}}{{form.email(class="form-control")}}<br>
+
 {{form.username.label}}{{form.username()}}<br>
 {{form.password.label}}{{form.password()}}<br>
 {{form.pass_confirm.label}}{{form.pass_confirm}}<br>
